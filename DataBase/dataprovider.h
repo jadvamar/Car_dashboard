@@ -28,9 +28,7 @@ public:
 
     static dataProvider* DP_Object(){
         static dataProvider *Obj;
-
-        if(!Obj)
-        {
+        if(!Obj){
             Obj = new dataProvider;
         }
         return Obj;
@@ -47,18 +45,14 @@ public:
     bool insertEngineHours(int x);
     bool addNewRowOfEngineHours();
 
-
     bool insertNewOperator(const QString &op);
     QString GetLastOpCol();
     std::vector<QString> sendOperator();
     bool updateLastOperator(QString a);
 
-
     bool updateUserdata(const QString &user , const QString &colour , const QString &transmissionType);
 
-
     bool insertInUserSettingDB(const QString &user , const QString &colour , const QString &transmissionType);
-
 
 };
 
